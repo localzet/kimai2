@@ -139,7 +139,7 @@ class Duration
         $duration = (float) $duration;
         $duration = $duration * 3600;
 
-        return (int) $duration;
+        return (int) round($duration);
     }
 
     protected function parseColonFormat(string $duration): int
