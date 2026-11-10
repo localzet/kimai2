@@ -65,6 +65,10 @@ class DurationTest extends TestCase
             [3600, '1', Duration::FORMAT_DECIMAL],
             [5400, '1.5', Duration::FORMAT_DECIMAL],
             [5400, '1,5', Duration::FORMAT_DECIMAL],
+            [29520, '8.2', Duration::FORMAT_DECIMAL],
+            [29520, '8,2', Duration::FORMAT_DECIMAL],
+            [14760, '4.1', Duration::FORMAT_DECIMAL],
+            [7380, '2.05', Duration::FORMAT_DECIMAL],
 
             [0, '', Duration::FORMAT_NATURAL],
             [0, 0, Duration::FORMAT_NATURAL],
